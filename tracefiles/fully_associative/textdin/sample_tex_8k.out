@@ -1,0 +1,54 @@
+---Dinero IV cache simulator, version 7
+---Written by Jan Edler and Mark D. Hill
+---Copyright (C) 1997 NEC Research Institute, Inc. and Mark D. Hill.
+---All rights reserved.
+---Copyright (C) 1985, 1989 Mark D. Hill.  All rights reserved.
+---See -copyright option for details
+
+---Summary of options (-help option gives usage information).
+
+-l1-usize 8192
+-l1-ubsize 32
+-l1-usbsize 32
+-l1-uassoc 1
+-l1-urepl l
+-l1-ufetch m
+-l1-upfdist 1
+-l1-uwalloc a
+-l1-uwback a
+-skipcount 0
+-flushcount 0
+-maxcount 0
+-stat-interval 0
+-informat d
+-on-trigger 0x0
+-off-trigger 0x0
+
+---Simulation begins.
+---Simulation complete.
+l1-ucache
+ Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+ -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+ Demand Fetches		      832477	      597309	      235168	      130655	      104513	           0
+  Fraction of total	      1.0000	      0.7175	      0.2825	      0.1569	      0.1255	      0.0000
+ Prefetch Fetches	        2838	        1353	        1485	        1485	           0	           0
+  Fraction		      1.0000	      0.4767	      0.5233	      0.5233	      0.0000	      0.0000
+ Total Fetches		      835315	      598662	      236653	      132140	      104513	           0
+  Fraction		      1.0000	      0.7167	      0.2833	      0.1582	      0.1251	      0.0000
+
+ Demand Misses		        4624	        1353	        3271	        1485	        1786	           0
+  Demand miss rate	      0.0056	      0.0023	      0.0139	      0.0114	      0.0171	      0.0000
+ Prefetch Misses	        1750	         564	        1186	        1186	           0	           0
+  PF miss rate		      0.6166	      0.4169	      0.7987	      0.7987	      0.0000	      0.0000
+ Total Misses		        6374	        1917	        4457	        2671	        1786	           0
+  Total miss rate	      0.0076	      0.0032	      0.0188	      0.0202	      0.0171	      0.0000
+
+ Multi-block refs                 0
+ Bytes From Memory	      203968
+ ( / Demand Fetches)	      0.2450
+ Bytes To Memory	       64224
+ ( / Demand Writes)	      0.6145
+ Total Bytes r/w Mem	      268192
+ ( / Demand Fetches)	      0.3222
+
+---Execution complete.

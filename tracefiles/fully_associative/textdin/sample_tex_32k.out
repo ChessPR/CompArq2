@@ -1,0 +1,54 @@
+---Dinero IV cache simulator, version 7
+---Written by Jan Edler and Mark D. Hill
+---Copyright (C) 1997 NEC Research Institute, Inc. and Mark D. Hill.
+---All rights reserved.
+---Copyright (C) 1985, 1989 Mark D. Hill.  All rights reserved.
+---See -copyright option for details
+
+---Summary of options (-help option gives usage information).
+
+-l1-usize 32768
+-l1-ubsize 32
+-l1-usbsize 32
+-l1-uassoc 1
+-l1-urepl l
+-l1-ufetch m
+-l1-upfdist 1
+-l1-uwalloc a
+-l1-uwback a
+-skipcount 0
+-flushcount 0
+-maxcount 0
+-stat-interval 0
+-informat d
+-on-trigger 0x0
+-off-trigger 0x0
+
+---Simulation begins.
+---Simulation complete.
+l1-ucache
+ Metrics		      Total	      Instrn	       Data	       Read	      Write	       Misc
+ -----------------	      ------	      ------	      ------	      ------	      ------	      ------
+ Demand Fetches		      832477	      597309	      235168	      130655	      104513	           0
+  Fraction of total	      1.0000	      0.7175	      0.2825	      0.1569	      0.1255	      0.0000
+ Prefetch Fetches	         605	         201	         404	         404	           0	           0
+  Fraction		      1.0000	      0.3322	      0.6678	      0.6678	      0.0000	      0.0000
+ Total Fetches		      833082	      597510	      235572	      131059	      104513	           0
+  Fraction		      1.0000	      0.7172	      0.2828	      0.1573	      0.1255	      0.0000
+
+ Demand Misses		        1710	         201	        1509	         404	        1105	           0
+  Demand miss rate	      0.0021	      0.0003	      0.0064	      0.0031	      0.0106	      0.0000
+ Prefetch Misses	         383	          66	         317	         317	           0	           0
+  PF miss rate		      0.6331	      0.3284	      0.7847	      0.7847	      0.0000	      0.0000
+ Total Misses		        2093	         267	        1826	         721	        1105	           0
+  Total miss rate	      0.0025	      0.0004	      0.0078	      0.0055	      0.0106	      0.0000
+
+ Multi-block refs                 0
+ Bytes From Memory	       66976
+ ( / Demand Fetches)	      0.0805
+ Bytes To Memory	       36160
+ ( / Demand Writes)	      0.3460
+ Total Bytes r/w Mem	      103136
+ ( / Demand Fetches)	      0.1239
+
+---Execution complete.
